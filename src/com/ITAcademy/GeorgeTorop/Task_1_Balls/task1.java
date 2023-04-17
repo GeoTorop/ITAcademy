@@ -14,7 +14,7 @@ public class  task1 {
         int ballsCount = scanner.nextInt();
         scanner.nextLine();
 
-        List<Ball> balls = new ArrayList<>();
+        Basket basket = new Basket();
         for (int i = 0; i < ballsCount; i++) {
             System.out.println("Ball #" + (i + 1));
             System.out.print("Enter the color of the ball: ");
@@ -25,11 +25,8 @@ public class  task1 {
             scanner.nextLine();
 
             Ball ball = new Ball(color, weight);
-            balls.add(ball);
+            basket.addBall(ball);
         }
-
-        Basket basket = new Basket();
-        basket.addBalls(balls);
 
         System.out.println("Overhaul weight of the balls in the basket: " + basket.getTotalWeight());
 
