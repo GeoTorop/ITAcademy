@@ -30,11 +30,11 @@ public class  task1 {
 
         System.out.println("Overhaul weight of the balls in the basket: " + basket.getTotalWeight());
 
-        System.out.print("Enter the color and amount of the ball: ");
+        System.out.print("Enter the color of the ball: ");
         String color = scanner.nextLine();
 
         int ballsCountByColor = basket.getBallsCountByColor(color);
-        System.out.println("Number of balls color \"" + color + "\" in the basket: " + ballsCountByColor);
+        System.out.println("Number of balls color " + color + " in the basket: " + ballsCountByColor);
 
         scanner.close();
     }
