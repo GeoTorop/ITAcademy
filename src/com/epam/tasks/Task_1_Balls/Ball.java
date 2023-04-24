@@ -1,4 +1,4 @@
-package com.ITAcademy.GeorgeTorop.Task_1_Balls;
+package com.epam.tasks.Task_1_Balls;
 
 public class Ball {
     private String color; // Color of the ball

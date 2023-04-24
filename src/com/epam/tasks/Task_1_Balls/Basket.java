@@ -1,4 +1,4 @@
-package com.ITAcademy.GeorgeTorop.Task_1_Balls;
+package com.epam.tasks.Task_1_Balls;
 
 import java.util.*;
 
