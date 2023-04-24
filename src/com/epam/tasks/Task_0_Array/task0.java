@@ -29,7 +29,7 @@ public class task0 {
         System.out.println("Sum of elements: " + sum);
         System.out.println("Count of positive elements: " + positiveCount);
         System.out.println("Count of negative elements: " + negativeCount);
-        System.out.println("Count of zero's: " + zeroCount);
+        System.out.println("Count of zeros: " + zeroCount);
     }
 
     public static int findMin(int[] array) {
