@@ -1,4 +1,4 @@
-package com.ITAcademy.GeorgeTorop.Task_0_Array;
+package com.epam.tasks.Task_0_Array;
 
 import java.util.Scanner;
 
