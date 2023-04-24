@@ -6,11 +6,11 @@ public class task0 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите количество элементов в массиве: ");
+        System.out.print("Enter the number of elements: ");
         int n = scanner.nextInt();
         int[] array = new int[n];
         for (int i = 0; i < n; i++) {
-            System.out.print("Введите элемент " + (i + 1) + ": ");
+            System.out.print("Enter the element " + (i + 1) + ": ");
             array[i] = scanner.nextInt();
         }
         scanner.close();
@@ -23,13 +23,13 @@ public class task0 {
         int negativeCount = countNegative(array);
         int zeroCount = countZero(array);
 
-        System.out.println("Минимальное значение: " + min);
-        System.out.println("Максимальное значение: " + max);
-        System.out.println("Среднее значение: " + avg);
-        System.out.println("Сумма элементов: " + sum);
-        System.out.println("Количество положительных элементов: " + positiveCount);
-        System.out.println("Количество отрицательных элементов: " + negativeCount);
-        System.out.println("Количество нулевых элементов: " + zeroCount);
+        System.out.println("Min value: " + min);
+        System.out.println("max value: " + max);
+        System.out.println("Avg value: " + avg);
+        System.out.println("Sum of elements: " + sum);
+        System.out.println("Count of positive elements: " + positiveCount);
+        System.out.println("Count of negative elements: " + negativeCount);
+        System.out.println("Count of zero's: " + zeroCount);
     }
 
     public static int findMin(int[] array) {
