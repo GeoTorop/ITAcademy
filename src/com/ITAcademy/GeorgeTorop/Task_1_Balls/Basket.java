@@ -3,14 +3,14 @@ package com.ITAcademy.GeorgeTorop.Task_1_Balls;
 import java.util.*;
 
 public class Basket {
-    private List<Ball> balls = new ArrayList<>(); // Список мячей в корзине
+    private List<Ball> balls = new ArrayList<>(); // Number of the balls
 
-    // Метод для добавления мяча в корзину
+    // Method for adding ball into the basket
     public void addBall(Ball ball) {
         balls.add(ball);
     }
 
-    // Метод для вычисления общего веса мячей в корзине
+    // Method for calc. total weight of the balls
     public double getTotalWeight() {
         double totalWeight = 0;
         for (Ball ball : balls) {
@@ -19,7 +19,7 @@ public class Basket {
         return totalWeight;
     }
 
-    // Метод для вычисления количества мячей заданного цвета в корзине
+    // Method for calc. number of balls of a given color in the basket
     public int getBallsCountByColor(String color) {
         int count = 0;
         for (Ball ball : balls) {

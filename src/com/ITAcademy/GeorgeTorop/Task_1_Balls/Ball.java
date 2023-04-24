@@ -1,8 +1,8 @@
 package com.ITAcademy.GeorgeTorop.Task_1_Balls;
 
 public class Ball {
-    private String color; // Цвет мяча
-    private double weight; // Вес мяча
+    private String color; // Color of the ball
+    private double weight; // Weight of the ball
 
     public Ball(String color, double weight) {
         if (weight <= 0) {
