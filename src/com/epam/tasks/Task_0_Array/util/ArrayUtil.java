@@ -3,7 +3,7 @@ package com.epam.tasks.Task_0_Array.util;
 import com.epam.tasks.Task_0_Array.entity.CustomArray;
 
 public class ArrayUtil {
-    public int findMin(CustomArray customArray) {
+    public static int findMin(CustomArray customArray) {
         int[] array = customArray.getArray();
         int min = array[0];
 

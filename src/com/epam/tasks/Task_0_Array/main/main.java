@@ -18,12 +18,12 @@ public class main {
         final int countNeg = arrayService.countNegative(customArray);
         final int countZer = arrayService.countZero(customArray);
 
-        System.out.println(min);
-        System.out.println(max);
-        System.out.println(avg);
-        System.out.println(sum);
-        System.out.println(countPos);
-        System.out.println(countNeg);
-        System.out.println(countZer);
+        System.out.println("Min: " + min);
+        System.out.println("Max: " + max);
+        System.out.println("Avg: " + avg);
+        System.out.println("Sum:" + sum);
+        System.out.println("CountPositive: " + countPos);
+        System.out.println("CountNegative: " + countNeg);
+        System.out.println("CountZeros: " + countZer);
     }
 }
