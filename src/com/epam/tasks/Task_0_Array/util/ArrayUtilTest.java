@@ -1,35 +1,66 @@
 package com.epam.tasks.Task_0_Array.util;
 
+import com.epam.tasks.Task_0_Array.entity.CustomArray;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayUtilTest {
 
-    @org.junit.jupiter.api.Test
-    void testFindMin() {
-
+    @Test
+    void findMin() {
+        CustomArray customArray = new CustomArray(new int[] {0, 2, 10, 20, 70, 1000, 0, -5, -6, 3});
+        int actualMin = ArrayUtil.findMin(customArray);
+        int expectedMin = -6;
+        Assertions.assertEquals(expectedMin, actualMin);
     }
 
-    @org.junit.jupiter.api.Test
-    void testFindMax() {
+    @Test
+    void findMax() {
+        CustomArray customArray = new CustomArray(new int[] {0, 2, 10, 20, 70, 1000, 0, -5, -6, 3});
+        int actualMax = ArrayUtil.findMax(customArray);
+        int expectedMax = 1000;
+        Assertions.assertEquals(expectedMax, actualMax);
     }
 
-    @org.junit.jupiter.api.Test
-    void testFindAvg() {
+    @Test
+    void findAvg() {
+        CustomArray customArray = new CustomArray(new int[] {0, 2, 10, 20, 70, 1000, 0, -5, -6, 3});
+        double actualAvg = ArrayUtil.findAvg(customArray); //Can I?
+        double expectedAvg = 109.4;
+        Assertions.assertEquals(expectedAvg, actualAvg);
     }
 
-    @org.junit.jupiter.api.Test
-    void testFindSum() {
+    @Test
+    void findSum() {
+        CustomArray customArray = new CustomArray(new int[] {0, 2, 10, 20, 70, 1000, 0, -5, -6, 3});
+        int actualSum = ArrayUtil.findSum(customArray);
+        int expectedSum = 1094;
+        Assertions.assertEquals(expectedSum, actualSum);
     }
 
-    @org.junit.jupiter.api.Test
-    void testCountPositive() {
+    @Test
+    void countPositive() {
+        CustomArray customArray = new CustomArray(new int[] {0, 2, 10, 20, 70, 1000, 0, -5, -6, 3});
+        int actualCountPos = ArrayUtil.countPositive(customArray);
+        int expectedCountPos = 6;
+        Assertions.assertEquals(expectedCountPos, actualCountPos);
     }
 
-    @org.junit.jupiter.api.Test
-    void testCountNegative() {
+    @Test
+    void countNegative() {
+        CustomArray customArray = new CustomArray(new int[] {0, 2, 10, 20, 70, 1000, 0, -5, -6, 3});
+        int actualCountNeg = ArrayUtil.countNegative(customArray);
+        int expectedCountNeg = 2;
+        Assertions.assertEquals(expectedCountNeg, actualCountNeg);
     }
 
-    @org.junit.jupiter.api.Test
-    void testCountZero() {
+    @Test
+    void countZero() {
+        CustomArray customArray = new CustomArray(new int[] {0, 2, 10, 20, 70, 1000, 0, -5, -6, 3});
+        int actualCountZer = ArrayUtil.countZero(customArray);
+        int expectedCountZer = 2;
+        Assertions.assertEquals(expectedCountZer, actualCountZer);
     }
 }

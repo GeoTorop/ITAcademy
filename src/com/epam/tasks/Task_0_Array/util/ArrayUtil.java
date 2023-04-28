@@ -15,7 +15,7 @@ public class ArrayUtil {
         return min;
     }
 
-    public int findMax(CustomArray customArray) {
+    public static int findMax(CustomArray customArray) {
         int[] array = customArray.getArray();
         int max = array[0];
 
@@ -27,14 +27,14 @@ public class ArrayUtil {
         return max;
     }
 
-    public double findAvg(CustomArray customArray) {
+    public static double findAvg(CustomArray customArray) {
         int[] array = customArray.getArray();
         double sum = findSum(customArray);
 
         return sum / array.length;
     }
 
-    public int findSum(CustomArray customArray) {
+    public static int findSum(CustomArray customArray) {
         int[] array = customArray.getArray();
         int sum = 0;
 
@@ -44,7 +44,7 @@ public class ArrayUtil {
         return sum;
     }
 
-    public int countPositive(CustomArray customArray) {
+    public static int countPositive(CustomArray customArray) {
         int[] array = customArray.getArray();
         int count = 0;
 
@@ -56,7 +56,7 @@ public class ArrayUtil {
         return count;
     }
 
-    public int countNegative(CustomArray customArray) {
+    public static int countNegative(CustomArray customArray) {
         int[] array = customArray.getArray();
         int count = 0;
 
@@ -68,7 +68,7 @@ public class ArrayUtil {
         return count;
     }
 
-    public int countZero(CustomArray customArray) {
+    public static int countZero(CustomArray customArray) {
         int[] array = customArray.getArray();
         int count = 0;
 
