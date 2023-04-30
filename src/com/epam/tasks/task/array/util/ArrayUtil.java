@@ -1,8 +1,12 @@
 package com.epam.tasks.task.array.util;
 
 import com.epam.tasks.task.array.entity.CustomArray;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ArrayUtil {
+    private static final Logger LOGGER = LogManager.getLogger();
+
     public static int findMin(CustomArray customArray) {
         int[] array = customArray.getArray();
         int min = array[0];
@@ -12,6 +16,7 @@ public class ArrayUtil {
                 min = array[i];
             }
         }
+        LOGGER.info("Min element in this array: {}", min);
         return min;
     }
 
@@ -24,13 +29,14 @@ public class ArrayUtil {
                 max = array[i];
             }
         }
+        LOGGER.info("Max element in this array: {}", max);
         return max;
     }
 
     public static double findAvg(CustomArray customArray) {
         int[] array = customArray.getArray();
-        double sum = findSum(customArray);
 
+        double sum = findSum(customArray);
         return sum / array.length;
     }
 
@@ -41,6 +47,7 @@ public class ArrayUtil {
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
+        LOGGER.info("Sum of elements in this array: {}", sum);
         return sum;
     }
 
@@ -53,6 +60,7 @@ public class ArrayUtil {
                 count++;
             }
         }
+        LOGGER.info("Count of positive elements in this array: {}", count);
         return count;
     }
 
@@ -65,6 +73,7 @@ public class ArrayUtil {
                 count++;
             }
         }
+        LOGGER.info("Count of negative elements in this array: {}", count);
         return count;
     }
 
@@ -77,6 +86,7 @@ public class ArrayUtil {
                 count++;
             }
         }
+        LOGGER.info("Count of zeros elements in this array: {}", count);
         return count;
     }
 }
