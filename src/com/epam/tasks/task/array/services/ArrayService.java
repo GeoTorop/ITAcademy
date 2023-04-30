@@ -1,6 +1,6 @@
-package com.epam.tasks.Task_0_Array.services;
+package com.epam.tasks.task.array.services;
 
-import com.epam.tasks.Task_0_Array.entity.CustomArray;
+import com.epam.tasks.task.array.entity.CustomArray;
 
 public interface ArrayService {
     int findMax(CustomArray customArray);

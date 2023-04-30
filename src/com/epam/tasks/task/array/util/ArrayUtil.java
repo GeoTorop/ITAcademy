@@ -1,6 +1,6 @@
-package com.epam.tasks.Task_0_Array.util;
+package com.epam.tasks.task.array.util;
 
-import com.epam.tasks.Task_0_Array.entity.CustomArray;
+import com.epam.tasks.task.array.entity.CustomArray;
 
 public class ArrayUtil {
     public static int findMin(CustomArray customArray) {

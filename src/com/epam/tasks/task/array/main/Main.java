@@ -1,11 +1,12 @@
-package com.epam.tasks.Task_0_Array.main;
+package com.epam.tasks.task.array.main;
 
-import com.epam.tasks.Task_0_Array.entity.CustomArray;
-import com.epam.tasks.Task_0_Array.services.ArrayService;
-import com.epam.tasks.Task_0_Array.services.ArrayServiceImpl;
+import com.epam.tasks.task.array.entity.CustomArray;
+import com.epam.tasks.task.array.services.ArrayService;
+import com.epam.tasks.task.array.services.ArrayServiceImpl;
 
-public class main {
+public class Main {
     private static final int[] ARRAY_OF_NUM = {0, 2, 10, 20, 70, 1000, 0, -5, -6, 3};
+
     public static void main(String[] args) {
         CustomArray customArray = new CustomArray(ARRAY_OF_NUM);
         ArrayService arrayService = new ArrayServiceImpl();

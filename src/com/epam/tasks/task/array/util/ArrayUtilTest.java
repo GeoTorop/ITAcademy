@@ -1,10 +1,8 @@
-package com.epam.tasks.Task_0_Array.util;
+package com.epam.tasks.task.array.util;
 
-import com.epam.tasks.Task_0_Array.entity.CustomArray;
+import com.epam.tasks.task.array.entity.CustomArray;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayUtilTest {
 
