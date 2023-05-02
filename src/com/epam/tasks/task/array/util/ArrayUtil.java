@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
 public class ArrayUtil {
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public static int findMin(CustomArray customArray) {
+    public int findMin(CustomArray customArray) {
         int[] array = customArray.getArray();
         int min = array[0];
 
@@ -20,7 +20,7 @@ public class ArrayUtil {
         return min;
     }
 
-    public static int findMax(CustomArray customArray) {
+    public int findMax(CustomArray customArray) {
         int[] array = customArray.getArray();
         int max = array[0];
 
@@ -33,7 +33,7 @@ public class ArrayUtil {
         return max;
     }
 
-    public static double findAvg(CustomArray customArray) {
+    public double findAvg(CustomArray customArray) {
         int[] array = customArray.getArray();
         double avg = 0;
 
@@ -44,7 +44,7 @@ public class ArrayUtil {
         return avg;
     }
 
-    public static int findSum(CustomArray customArray) {
+    public int findSum(CustomArray customArray) {
         int[] array = customArray.getArray();
         int sum = 0;
 
@@ -55,7 +55,7 @@ public class ArrayUtil {
         return sum;
     }
 
-    public static int countPositive(CustomArray customArray) {
+    public int countPositive(CustomArray customArray) {
         int[] array = customArray.getArray();
         int countPos = 0;
 
@@ -68,7 +68,7 @@ public class ArrayUtil {
         return countPos;
     }
 
-    public static int countNegative(CustomArray customArray) {
+    public int countNegative(CustomArray customArray) {
         int[] array = customArray.getArray();
         int countNeg = 0;
 
@@ -81,7 +81,7 @@ public class ArrayUtil {
         return countNeg;
     }
 
-    public static int countZero(CustomArray customArray) {
+    public int countZero(CustomArray customArray) {
         int[] array = customArray.getArray();
         int countZer = 0;
 
