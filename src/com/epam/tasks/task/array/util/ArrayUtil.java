@@ -53,41 +53,41 @@ public class ArrayUtil {
 
     public static int countPositive(CustomArray customArray) {
         int[] array = customArray.getArray();
-        int count = 0;
+        int countPos = 0;
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] > 0) {
-                count++;
+                countPos++;
             }
         }
-        LOGGER.info("Count of positive elements in this array: {}", count);
-        return count;
+        LOGGER.info("Count of positive elements in this array: {}", countPos);
+        return countPos;
     }
 
     public static int countNegative(CustomArray customArray) {
         int[] array = customArray.getArray();
-        int count = 0;
+        int countNeg = 0;
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] < 0) {
-                count++;
+                countNeg++;
             }
         }
-        LOGGER.info("Count of negative elements in this array: {}", count);
-        return count;
+        LOGGER.info("Count of negative elements in this array: {}", countNeg);
+        return countNeg;
     }
 
     public static int countZero(CustomArray customArray) {
         int[] array = customArray.getArray();
-        int count = 0;
+        int countZer = 0;
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] == 0) {
-                count++;
+                countZer++;
             }
         }
-        LOGGER.info("Count of zeros elements in this array: {}", count);
-        return count;
+        LOGGER.info("Count of zeros elements in this array: {}", countZer);
+        return countZer;
     }
 }
 
