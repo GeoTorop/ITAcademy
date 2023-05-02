@@ -2,7 +2,7 @@ package com.epam.tasks.task.array.main;
 
 import com.epam.tasks.task.array.entity.CustomArray;
 import com.epam.tasks.task.array.services.ArrayService;
-import com.epam.tasks.task.array.services.ArrayServiceImpl;
+import com.epam.tasks.task.array.services.impl.ArrayServiceImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
