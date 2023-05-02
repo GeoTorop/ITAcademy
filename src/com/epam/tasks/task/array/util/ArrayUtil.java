@@ -35,9 +35,13 @@ public class ArrayUtil {
 
     public static double findAvg(CustomArray customArray) {
         int[] array = customArray.getArray();
+        double avg = 0;
 
         double sum = findSum(customArray);
-        return sum / array.length;
+        avg = sum / array.length;
+
+        LOGGER.info("Avg of elements in this array: {}", avg);
+        return avg;
     }
 
     public static int findSum(CustomArray customArray) {
