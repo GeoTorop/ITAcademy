@@ -4,7 +4,7 @@ import com.epam.tasks.task.array.entity.CustomArray;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class ArrayUtil {
+public class ArrayCalculation {
     private static final Logger LOGGER = LogManager.getLogger();
 
     public int findMin(CustomArray customArray) {

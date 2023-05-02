@@ -2,46 +2,46 @@ package com.epam.tasks.task.array.services.impl;
 
 import com.epam.tasks.task.array.entity.CustomArray;
 import com.epam.tasks.task.array.services.ArrayServiceInterface;
-import com.epam.tasks.task.array.util.ArrayUtil;
+import com.epam.tasks.task.array.util.ArrayCalculation;
 
 public class ArrayServiceInterfaceImpl implements ArrayServiceInterface {
-    private ArrayUtil arrayUtil;
+    private ArrayCalculation arrayCalculation;
 
     public ArrayServiceInterfaceImpl() {
-        this.arrayUtil = new ArrayUtil();
+        this.arrayCalculation = new ArrayCalculation();
     }
     @Override
     public int findMax(CustomArray customArray) {
-        return arrayUtil.findMax(customArray);
+        return arrayCalculation.findMax(customArray);
     }
 
     @Override
     public int findMin(CustomArray customArray) {
-        return arrayUtil.findMin(customArray);
+        return arrayCalculation.findMin(customArray);
     }
 
     @Override
     public double findAvg(CustomArray customArray) {
-        return arrayUtil.findAvg(customArray);
+        return arrayCalculation.findAvg(customArray);
     }
 
     @Override
     public int findSum(CustomArray customArray) {
-        return arrayUtil.findSum(customArray);
+        return arrayCalculation.findSum(customArray);
     }
 
     @Override
     public int countPositive(CustomArray customArray) {
-        return arrayUtil.countPositive(customArray);
+        return arrayCalculation.countPositive(customArray);
     }
 
     @Override
     public int countNegative(CustomArray customArray) {
-        return arrayUtil.countNegative(customArray);
+        return arrayCalculation.countNegative(customArray);
     }
 
     @Override
     public int countZero(CustomArray customArray) {
-        return arrayUtil.countZero(customArray);
+        return arrayCalculation.countZero(customArray);
     }
 }
