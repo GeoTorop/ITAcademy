@@ -13,5 +13,13 @@ public class Main {
     public static void main(String[] args) {
         CustomArray customArray = new CustomArray(ARRAY_OF_NUM);
         ArrayServiceInterface arrayServiceInterface = new ArrayServiceInterfaceImpl();
+
+        final int min = arrayServiceInterface.findMin(customArray);
+        final int max = arrayServiceInterface.findMax(customArray);
+        final double avg = arrayServiceInterface.findAvg(customArray);
+        final int sum = arrayServiceInterface.findSum(customArray);
+        final int countPos = arrayServiceInterface.countPositive(customArray);
+        final int countNeg = arrayServiceInterface.countNegative(customArray);
+        final int countZer = arrayServiceInterface.countZero(customArray);
     }
 }
