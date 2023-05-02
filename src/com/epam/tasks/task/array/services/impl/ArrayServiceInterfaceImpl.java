@@ -5,7 +5,7 @@ import com.epam.tasks.task.array.services.ArrayServiceInterface;
 import com.epam.tasks.task.array.services.ArrayCalculation;
 
 public class ArrayServiceInterfaceImpl implements ArrayServiceInterface {
-    private ArrayCalculation arrayCalculation;
+    private final ArrayCalculation arrayCalculation;
 
     public ArrayServiceInterfaceImpl() {
         this.arrayCalculation = new ArrayCalculation();
