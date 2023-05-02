@@ -1,13 +1,13 @@
 package com.epam.tasks.task.array.services.impl;
 
 import com.epam.tasks.task.array.entity.CustomArray;
-import com.epam.tasks.task.array.services.ArrayService;
+import com.epam.tasks.task.array.services.ArrayServiceInterface;
 import com.epam.tasks.task.array.util.ArrayUtil;
 
-public class ArrayServiceImpl implements ArrayService {
+public class ArrayServiceInterfaceImpl implements ArrayServiceInterface {
     private ArrayUtil arrayUtil;
 
-    public ArrayServiceImpl() {
+    public ArrayServiceInterfaceImpl() {
         this.arrayUtil = new ArrayUtil();
     }
     @Override

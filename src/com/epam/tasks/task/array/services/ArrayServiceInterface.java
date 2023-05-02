@@ -2,7 +2,7 @@ package com.epam.tasks.task.array.services;
 
 import com.epam.tasks.task.array.entity.CustomArray;
 
-public interface ArrayService {
+public interface ArrayServiceInterface {
     int findMax(CustomArray customArray);
     int findMin(CustomArray customArray);
     double findAvg(CustomArray customArray);
