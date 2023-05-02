@@ -1,6 +1,7 @@
-package com.epam.tasks.task.array.util;
+package com.epam.tasks.task.array.tests;
 
 import com.epam.tasks.task.array.entity.CustomArray;
+import com.epam.tasks.task.array.util.ArrayUtil;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
