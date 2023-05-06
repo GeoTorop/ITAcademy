@@ -1,8 +1,10 @@
 package com.epam.tasks.task.array.main;
 
 import com.epam.tasks.task.array.entity.CustomArray;
-import com.epam.tasks.task.array.services.ArrayServiceInterface;
+import com.epam.tasks.task.array.services.interfaces.ArrayServiceInterface;
+import com.epam.tasks.task.array.services.interfaces.ArraySortServiceInterface;
 import com.epam.tasks.task.array.services.impl.ArrayServiceInterfaceImpl;
+import com.epam.tasks.task.array.services.impl.ArraySortServiceInterfaceImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -13,6 +15,7 @@ public class Main {
     public static void main(String[] args) {
         CustomArray customArray = new CustomArray(ARRAY_OF_NUM);
         ArrayServiceInterface arrayServiceInterface = new ArrayServiceInterfaceImpl();
+        ArraySortServiceInterface arraySortServiceInterface = new ArraySortServiceInterfaceImpl();
 
         final int min = arrayServiceInterface.findMin(customArray);
         final int max = arrayServiceInterface.findMax(customArray);
@@ -21,5 +24,7 @@ public class Main {
         final int countPos = arrayServiceInterface.countPositive(customArray);
         final int countNeg = arrayServiceInterface.countNegative(customArray);
         final int countZer = arrayServiceInterface.countZero(customArray);
+
+        ArraySortServiceInterface.bubbleSort(customArray);
     }
 }

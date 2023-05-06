@@ -1,4 +1,4 @@
-package com.epam.tasks.task.array.services;
+package com.epam.tasks.task.array.services.interfaces;
 
 import com.epam.tasks.task.array.entity.CustomArray;
 

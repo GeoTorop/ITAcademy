@@ -1,7 +1,7 @@
 package com.epam.tasks.task.array.services.impl;
 
 import com.epam.tasks.task.array.entity.CustomArray;
-import com.epam.tasks.task.array.services.ArrayServiceInterface;
+import com.epam.tasks.task.array.services.interfaces.ArrayServiceInterface;
 import com.epam.tasks.task.array.services.ArrayCalculation;
 
 public class ArrayServiceInterfaceImpl implements ArrayServiceInterface {
