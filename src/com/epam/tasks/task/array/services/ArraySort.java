@@ -4,10 +4,10 @@ import com.epam.tasks.task.array.entity.CustomArray;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class ArraySort {
+public class ArraySort implements ArraySortServiceInterface {
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public static void bubbleSort(CustomArray customArray) {
+    public void bubbleSort(CustomArray customArray) {
         int[] arr = customArray.getArray();
         int n = arr.length;
         int swap = 0;
@@ -26,7 +26,7 @@ public class ArraySort {
         }
     }
 
-    public static void selectionSort(CustomArray customArray) {
+    public void selectionSort(CustomArray customArray) {
         int[] arr = customArray.getArray();
         int n = arr.length;
 
@@ -48,7 +48,7 @@ public class ArraySort {
         }
     }
 
-    public static void insertionSort(CustomArray customArray) {
+    public void insertionSort(CustomArray customArray) {
         int[] arr = customArray.getArray();
         int n = arr.length;
 
