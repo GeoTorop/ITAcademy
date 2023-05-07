@@ -6,12 +6,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ArraySort implements ArraySortServiceInterface {
-    private static final Logger LOGGER = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger(ArraySort.class);
 
     public void bubbleSort(CustomArray customArray) {
         int[] arr = customArray.getArray();
         int n = arr.length;
         int swap = 0;
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 if (arr[j + 1] < arr[j]) {
@@ -21,10 +22,7 @@ public class ArraySort implements ArraySortServiceInterface {
                 }
             }
         }
-        LOGGER.info("Bubble sort: ");
-        for (int num : arr) {
-            LOGGER.info(num);
-        }
+        LOGGER.info("Bubble sort: {}", arr);
     }
 
     public void selectionSort(CustomArray customArray) {
@@ -43,10 +41,7 @@ public class ArraySort implements ArraySortServiceInterface {
             arr[pos] = arr[i];
             arr[i] = min;
         }
-        LOGGER.info("Selection sort: ");
-        for (int num : arr) {
-            LOGGER.info(num);
-        }
+        LOGGER.info("Selection sort: {}", arr);
     }
 
     public void insertionSort(CustomArray customArray) {
@@ -62,9 +57,6 @@ public class ArraySort implements ArraySortServiceInterface {
             }
             arr[j + 1] = current;
         }
-        LOGGER.info("Insertion sort: ");
-        for (int num : arr) {
-            LOGGER.info(num);
-        }
+        LOGGER.info("Insertion sort: {}", arr);
     }
 }
