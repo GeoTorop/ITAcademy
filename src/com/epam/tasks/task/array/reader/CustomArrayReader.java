@@ -10,40 +10,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomArrayReader {
-    public static CustomArray readArrayFromFile(String filePath) {
-        List<Integer> array = new ArrayList<>();
-        BufferedReader reader = null;
+    private final String filePath;
 
-        try {
-            File file = new File(filePath);
-            reader = new BufferedReader(new FileReader(file));
-            String line;
+    public CustomArrayReader(String filePath) {
+        this.filePath = filePath;
+    }
 
-            while ((line = reader.readLine()) != null) {
+    public int[] readArray() throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line = reader.readLine();
+            if (line == null) {
+                throw new IOException("File is empty");
+            }
+            String[] parts = line.split(" ");
+            int[] array = new int[parts.length];
+            for (int i = 0; i < parts.length; i++) {
                 try {
-                    int num = Integer.parseInt(line);
-                    array.add(num);
+                    array[i] = Integer.parseInt(parts[i]);
                 } catch (NumberFormatException e) {
-                    System.out.println("Error reading data: " + line);
+                    throw new IOException("Invalid data in file");
                 }
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (reader != null) {
-                    reader.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            return array;
         }
-
-        int[] arr = new int[array.size()];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = array.get(i);
-        }
-
-        return new CustomArray(arr);
     }
 }
