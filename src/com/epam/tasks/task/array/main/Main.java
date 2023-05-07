@@ -25,6 +25,8 @@ public class Main {
         final int countNeg = arrayServiceInterface.countNegative(customArray);
         final int countZer = arrayServiceInterface.countZero(customArray);
 
-        ArraySortServiceInterface.bubbleSort(customArray);
+        arraySortServiceInterface.bubbleSort(customArray);
+        arraySortServiceInterface.selectionSort(customArray);
+        arraySortServiceInterface.insertionSort(customArray);
     }
 }
