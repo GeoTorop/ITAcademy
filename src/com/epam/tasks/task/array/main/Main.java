@@ -17,13 +17,13 @@ public class Main {
         ArrayServiceInterface arrayServiceInterface = new ArrayServiceInterfaceImpl();
         ArraySortServiceInterface arraySortServiceInterface = new ArraySortServiceInterfaceImpl();
 
-        final int min = arrayServiceInterface.findMin(customArray);
-        final int max = arrayServiceInterface.findMax(customArray);
-        final double avg = arrayServiceInterface.findAvg(customArray);
-        final int sum = arrayServiceInterface.findSum(customArray);
-        final int countPos = arrayServiceInterface.countPositive(customArray);
-        final int countNeg = arrayServiceInterface.countNegative(customArray);
-        final int countZer = arrayServiceInterface.countZero(customArray);
+        arrayServiceInterface.findMin(customArray);
+        arrayServiceInterface.findMax(customArray);
+        arrayServiceInterface.findAvg(customArray);
+        arrayServiceInterface.findSum(customArray);
+        arrayServiceInterface.countPositive(customArray);
+        arrayServiceInterface.countNegative(customArray);
+        arrayServiceInterface.countZero(customArray);
 
         arraySortServiceInterface.bubbleSort(customArray);
         arraySortServiceInterface.selectionSort(customArray);
