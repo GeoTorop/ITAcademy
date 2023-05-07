@@ -1,9 +1,9 @@
 package com.epam.tasks.task.array.main;
 
 import com.epam.tasks.task.array.entity.CustomArray;
-import com.epam.tasks.task.array.services.interfaces.ArrayServiceInterface;
+import com.epam.tasks.task.array.services.interfaces.ArrayCalculationServiceInterface;
 import com.epam.tasks.task.array.services.interfaces.ArraySortServiceInterface;
-import com.epam.tasks.task.array.services.impl.ArrayServiceInterfaceImpl;
+import com.epam.tasks.task.array.services.impl.ArrayCalculationServiceInterfaceImpl;
 import com.epam.tasks.task.array.services.impl.ArraySortServiceInterfaceImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,16 +14,19 @@ public class Main {
 
     public static void main(String[] args) {
         CustomArray customArray = new CustomArray(ARRAY_OF_NUM);
-        ArrayServiceInterface arrayServiceInterface = new ArrayServiceInterfaceImpl();
+        //String filePath = "data/array.txt";
+        //CustomArray customArray = CustomArrayReader.readArrayFromFile(filePath);
+
+        ArrayCalculationServiceInterface arrayCalculationServiceInterface = new ArrayCalculationServiceInterfaceImpl();
         ArraySortServiceInterface arraySortServiceInterface = new ArraySortServiceInterfaceImpl();
 
-        arrayServiceInterface.findMin(customArray);
-        arrayServiceInterface.findMax(customArray);
-        arrayServiceInterface.findAvg(customArray);
-        arrayServiceInterface.findSum(customArray);
-        arrayServiceInterface.countPositive(customArray);
-        arrayServiceInterface.countNegative(customArray);
-        arrayServiceInterface.countZero(customArray);
+        arrayCalculationServiceInterface.findMin(customArray);
+        arrayCalculationServiceInterface.findMax(customArray);
+        arrayCalculationServiceInterface.findAvg(customArray);
+        arrayCalculationServiceInterface.findSum(customArray);
+        arrayCalculationServiceInterface.countPositive(customArray);
+        arrayCalculationServiceInterface.countNegative(customArray);
+        arrayCalculationServiceInterface.countZero(customArray);
 
         arraySortServiceInterface.bubbleSort(customArray);
         arraySortServiceInterface.selectionSort(customArray);
