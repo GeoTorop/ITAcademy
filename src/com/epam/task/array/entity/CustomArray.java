@@ -1,4 +1,4 @@
-package com.epam.tasks.task.array.entity;
+package com.epam.task.array.entity;
 
 public class CustomArray {
 

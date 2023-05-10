@@ -1,13 +1,8 @@
-package com.epam.tasks.task.array.reader;
-
-import com.epam.tasks.task.array.entity.CustomArray;
+package com.epam.task.array.reader;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class CustomArrayReader {
     private final String filePath;

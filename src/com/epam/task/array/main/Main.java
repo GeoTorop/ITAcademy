@@ -1,11 +1,11 @@
-package com.epam.tasks.task.array.main;
+package com.epam.task.array.main;
 
-import com.epam.tasks.task.array.entity.CustomArray;
-import com.epam.tasks.task.array.reader.CustomArrayReader;
-import com.epam.tasks.task.array.services.ArrayCalculationServiceInterface;
-import com.epam.tasks.task.array.services.ArraySortServiceInterface;
-import com.epam.tasks.task.array.services.impl.ArrayCalculationServiceInterfaceImpl;
-import com.epam.tasks.task.array.services.impl.ArraySortServiceInterfaceImpl;
+import com.epam.task.array.reader.CustomArrayReader;
+import com.epam.task.array.entity.CustomArray;
+import com.epam.task.array.services.ArrayCalculationServiceInterface;
+import com.epam.task.array.services.ArraySortServiceInterface;
+import com.epam.task.array.services.impl.ArrayCalculationServiceInterfaceImpl;
+import com.epam.task.array.services.impl.ArraySortServiceInterfaceImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

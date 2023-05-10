@@ -1,8 +1,8 @@
-package com.epam.tasks.task.array.services.impl;
+package com.epam.task.array.services.impl;
 
-import com.epam.tasks.task.array.entity.CustomArray;
-import com.epam.tasks.task.array.services.ArraySort;
-import com.epam.tasks.task.array.services.ArraySortServiceInterface;
+import com.epam.task.array.services.ArraySort;
+import com.epam.task.array.entity.CustomArray;
+import com.epam.task.array.services.ArraySortServiceInterface;
 
 
 public class ArraySortServiceInterfaceImpl implements ArraySortServiceInterface {

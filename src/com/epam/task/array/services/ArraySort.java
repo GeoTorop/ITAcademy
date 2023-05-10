@@ -1,6 +1,6 @@
-package com.epam.tasks.task.array.services;
+package com.epam.task.array.services;
 
-import com.epam.tasks.task.array.entity.CustomArray;
+import com.epam.task.array.entity.CustomArray;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
