@@ -2,9 +2,8 @@ package com.epam.tasks.task.array.main;
 
 import com.epam.tasks.task.array.entity.CustomArray;
 import com.epam.tasks.task.array.reader.CustomArrayReader;
-import com.epam.tasks.task.array.services.ArrayCalculation;
-import com.epam.tasks.task.array.services.interfaces.ArrayCalculationServiceInterface;
-import com.epam.tasks.task.array.services.interfaces.ArraySortServiceInterface;
+import com.epam.tasks.task.array.services.ArrayCalculationServiceInterface;
+import com.epam.tasks.task.array.services.ArraySortServiceInterface;
 import com.epam.tasks.task.array.services.impl.ArrayCalculationServiceInterfaceImpl;
 import com.epam.tasks.task.array.services.impl.ArraySortServiceInterfaceImpl;
 import org.apache.logging.log4j.LogManager;
@@ -36,7 +35,7 @@ public class Main {
 
         CustomArrayReader reader = new CustomArrayReader("data/array.txt");
         int[] array = reader.readArray();
-
+        int min = arrayCalculationServiceInterface.findMin(customArray);
         System.out.println(Arrays.toString(array));
     }
 }
