@@ -1,4 +1,4 @@
-package com.epam.task.array.reader;
+package com.epam.task.array.customreader;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
