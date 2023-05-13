@@ -1,32 +1,36 @@
 package com.epam.task.array.customreader;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import com.epam.task.array.exceptions.CustomException;
+
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class CustomArrayReader {
-    private final String filePath;
+    private static Logger LOGGER = LogManager.getLogger();
 
-    public CustomArrayReader(String filePath) {
-        this.filePath = filePath;
-    }
-
-    public int[] readArray() throws IOException {
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-            String line = reader.readLine();
-            if (line == null) {
-                throw new IOException("File is empty");
-            }
-            String[] parts = line.split(" ");
-            int[] array = new int[parts.length];
-            for (int i = 0; i < parts.length; i++) {
-                try {
-                    array[i] = Integer.parseInt(parts[i]);
-                } catch (NumberFormatException e) {
-                    throw new IOException("Invalid data in file");
+    public String read(String filename) throws CustomException {
+        String data = null;
+        Path path = Paths.get(filename);
+        if (Files.exists(path) && !Files.isDirectory(path) && Files.isReadable(path)) {
+            Stream<String> fileStream = null;
+            try {
+                fileStream = Files.lines(path);
+                data = fileStream.reduce((s1, s2) -> s1 + " " + s2).orElse("empty");
+            } catch (IOException e) {
+                throw new CustomException("Failed to read file!", e);
+            } finally {
+                if (fileStream != null) {
+                    fileStream.close();
                 }
             }
-            return array;
+        } else {
+            LOGGER.info("Invalid path!");
         }
+        return data;
     }
 }
