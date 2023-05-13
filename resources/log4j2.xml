@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Extra logging related to initialization of Log4j.
- Set to debug or trace if log4j initialization is failing. -->
-<Configuration status="warn">
+<Configuration status="INFO">
+    <Properties>
+        <Property name="filename">array.log</Property>
+    </Properties>
     <Appenders>
-        <!-- Console appender configuration -->
-        <Console name="console" target="SYSTEM_OUT">
-            <PatternLayout
-                    pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
         </Console>
+        <File name="File" fileName="${filename}">
+            <PatternLayout>
+                <pattern>%d %p %C{1.} [%t] %m%n</pattern>
+            </PatternLayout>
+        </File>
     </Appenders>
     <Loggers>
-        <Logger name="com.epam.tasks.task.array.main" level="trace">
-            <AppenderRef ref="Console"/>
-        </Logger>
-        <!-- Root logger referring to console appender -->
-        <Root level="info">
-            <AppenderRef ref="console" />
+        <Root level="debug">
+            <AppenderRef ref="File"/>
+            <AppenderRef ref="ConsoleAppender" />
         </Root>
     </Loggers>
 </Configuration>
