@@ -1,0 +1,11 @@
+2023-05-13 23:51:05,185 INFO c.e.t.a.s.ArrayCalculation [main] Min element in this array: -6
+2023-05-13 23:51:05,185 INFO c.e.t.a.s.ArrayCalculation [main] Max element in this array: 1000
+2023-05-13 23:51:05,185 INFO c.e.t.a.s.ArrayCalculation [main] Sum of elements in this array: 1094
+2023-05-13 23:51:05,200 INFO c.e.t.a.s.ArrayCalculation [main] Avg of elements in this array: 109.4
+2023-05-13 23:51:05,200 INFO c.e.t.a.s.ArrayCalculation [main] Sum of elements in this array: 1094
+2023-05-13 23:51:05,200 INFO c.e.t.a.s.ArrayCalculation [main] Count of positive elements in this array: 6
+2023-05-13 23:51:05,200 INFO c.e.t.a.s.ArrayCalculation [main] Count of negative elements in this array: 2
+2023-05-13 23:51:05,200 INFO c.e.t.a.s.ArrayCalculation [main] Count of zeros elements in this array: 2
+2023-05-13 23:51:05,200 INFO c.e.t.a.s.ArraySort [main] Bubble sort: [-6, -5, 0, 0, 2, 3, 10, 20, 70, 1000]
+2023-05-13 23:51:05,200 INFO c.e.t.a.s.ArraySort [main] Selection sort: [-6, -5, 0, 0, 2, 3, 10, 20, 70, 1000]
+2023-05-13 23:51:05,200 INFO c.e.t.a.s.ArraySort [main] Insertion sort: [-6, -5, 0, 0, 2, 3, 10, 20, 70, 1000]
