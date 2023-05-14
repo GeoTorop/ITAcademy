@@ -1,6 +1,7 @@
 package com.epam.task.array.entity;
 
 import java.util.Arrays;
+import java.util.StringJoiner;
 
 public class CustomArray {
 
@@ -31,5 +32,11 @@ public class CustomArray {
         return Arrays.hashCode(array);
     }
 
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", CustomArray.class.getSimpleName() + "[", "]")
+                .add("array=" + Arrays.toString(array))
+                .toString();
+    }
 }
 
