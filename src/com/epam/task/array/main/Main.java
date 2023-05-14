@@ -23,7 +23,7 @@ public class Main {
 
     public static void main(String[] args) {
         String fileName = "data/array.txt";
-        LOGGER.info("baja jajo");
+        LOGGER.info("test");
         CustomArrayReaderInterface reader = new CustomArrayReaderImpl();
         List<int[]> numbers;
         List<CustomArray> customArrays = new ArrayList<>();
