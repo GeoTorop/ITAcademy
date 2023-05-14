@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Optional;
 import java.util.stream.Stream;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,14 +14,14 @@ import org.apache.logging.log4j.Logger;
 public class CustomArrayReader {
     private static Logger LOGGER = LogManager.getLogger();
 
-    public String read(String filename) throws CustomException {
-        String data = null;
+    public Optional<String> read(String filename) throws CustomException {
+        Optional<String> data = Optional.empty();
         Path path = Paths.get(filename);
         if (Files.exists(path) && !Files.isDirectory(path) && Files.isReadable(path)) {
             Stream<String> fileStream = null;
             try {
                 fileStream = Files.lines(path);
-                data = fileStream.reduce((s1, s2) -> s1 + " " + s2).orElse("empty");
+                data = fileStream.reduce((s1, s2) -> s1 + " " + s2);
             } catch (IOException e) {
                 throw new CustomException("Failed to read file!", e);
             } finally {
@@ -29,7 +30,7 @@ public class CustomArrayReader {
                 }
             }
         } else {
-            LOGGER.info("Invalid path!");
+            LOGGER.error("Invalid path!" + filename);
         }
         return data;
     }
