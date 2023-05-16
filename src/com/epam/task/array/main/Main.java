@@ -1,16 +1,14 @@
 package com.epam.task.array.main;
 
 import com.epam.task.array.creator.CustomArrayCreator;
-import com.epam.task.array.customreader.CustomArrayReaderInterface;
+import com.epam.task.array.customreader.CustomArrayReader;
 import com.epam.task.array.customreader.impl.CustomArrayReaderImpl;
 import com.epam.task.array.entity.CustomArray;
 import com.epam.task.array.exceptions.CustomException;
-import com.epam.task.array.services.ArrayCalculationServiceInterface;
-import com.epam.task.array.services.ArraySortServiceInterface;
-import com.epam.task.array.services.impl.ArrayCalculationServiceInterfaceImpl;
-import com.epam.task.array.services.impl.ArraySortServiceInterfaceImpl;
-import com.epam.task.array.validator.CustomValidatorInterface;
-import com.epam.task.array.validator.impl.CustomValidatorImpl;
+import com.epam.task.array.services.ArrayCalculationService;
+import com.epam.task.array.services.ArraySortService;
+import com.epam.task.array.services.impl.ArrayCalculationServiceImpl;
+import com.epam.task.array.services.impl.ArraySortServiceImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,14 +22,14 @@ public class Main {
     public static void main(String[] args) {
         String fileName = "data/array.txt";
         LOGGER.info("test");
-        CustomArrayReaderInterface reader = new CustomArrayReaderImpl();
+        CustomArrayReader reader = new CustomArrayReaderImpl();
         List<int[]> numbers;
         List<CustomArray> customArrays = new ArrayList<>();
         try {
             numbers = reader.readCustomArray(fileName);
             customArrays = CustomArrayCreator.createCustomArrayList(numbers);
-            ArrayCalculationServiceInterface calc = new ArrayCalculationServiceInterfaceImpl();
-            ArraySortServiceInterface sort = new ArraySortServiceInterfaceImpl();
+            ArrayCalculationService calc = new ArrayCalculationServiceImpl();
+            ArraySortService sort = new ArraySortServiceImpl();
             for (CustomArray customArray : customArrays) {
                 LOGGER.info("Original array: {}", customArray);
                 LOGGER.info("Calculations: ");
