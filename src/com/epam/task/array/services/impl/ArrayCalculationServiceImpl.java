@@ -2,12 +2,12 @@ package com.epam.task.array.services.impl;
 
 import com.epam.task.array.services.ArrayCalculation;
 import com.epam.task.array.entity.CustomArray;
-import com.epam.task.array.services.ArrayCalculationServiceInterface;
+import com.epam.task.array.services.ArrayCalculationService;
 
-public class ArrayCalculationServiceInterfaceImpl implements ArrayCalculationServiceInterface {
+public class ArrayCalculationServiceImpl implements ArrayCalculationService {
     private final ArrayCalculation arrayCalculation;
 
-    public ArrayCalculationServiceInterfaceImpl() {
+    public ArrayCalculationServiceImpl() {
         this.arrayCalculation = new ArrayCalculation();
     }
     @Override

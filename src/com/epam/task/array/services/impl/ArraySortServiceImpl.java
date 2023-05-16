@@ -2,13 +2,13 @@ package com.epam.task.array.services.impl;
 
 import com.epam.task.array.services.ArraySort;
 import com.epam.task.array.entity.CustomArray;
-import com.epam.task.array.services.ArraySortServiceInterface;
+import com.epam.task.array.services.ArraySortService;
 
 
-public class ArraySortServiceInterfaceImpl implements ArraySortServiceInterface {
+public class ArraySortServiceImpl implements ArraySortService {
     private final ArraySort arraySort;
 
-    public ArraySortServiceInterfaceImpl() {
+    public ArraySortServiceImpl() {
         this.arraySort = new ArraySort();
     }
 
