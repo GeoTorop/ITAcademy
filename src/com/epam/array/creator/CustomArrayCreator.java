@@ -1,6 +1,6 @@
 package com.epam.array.creator;
 
-import com.epam.array.exceptions.CustomException;
+import com.epam.array.exception.CustomException;
 import com.epam.array.entity.CustomArray;
 
 import java.util.ArrayList;

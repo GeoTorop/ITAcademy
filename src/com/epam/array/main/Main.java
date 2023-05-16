@@ -4,7 +4,7 @@ import com.epam.array.customreader.impl.CustomArrayReaderImpl;
 import com.epam.array.creator.CustomArrayCreator;
 import com.epam.array.customreader.CustomArrayReader;
 import com.epam.array.entity.CustomArray;
-import com.epam.array.exceptions.CustomException;
+import com.epam.array.exception.CustomException;
 import com.epam.array.services.ArrayCalculationService;
 import com.epam.array.services.ArraySortService;
 import com.epam.array.services.impl.ArrayCalculationServiceImpl;

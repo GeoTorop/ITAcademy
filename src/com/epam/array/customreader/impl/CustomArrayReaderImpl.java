@@ -1,7 +1,7 @@
 package com.epam.array.customreader.impl;
 
 import com.epam.array.customreader.CustomArrayReader;
-import com.epam.array.exceptions.CustomException;
+import com.epam.array.exception.CustomException;
 import com.epam.array.validator.CustomValidator;
 import com.epam.array.validator.impl.CustomValidatorImpl;
 
