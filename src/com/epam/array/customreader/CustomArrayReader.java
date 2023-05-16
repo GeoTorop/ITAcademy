@@ -1,6 +1,6 @@
-package com.epam.task.array.customreader;
+package com.epam.array.customreader;
 
-import com.epam.task.array.exceptions.CustomException;
+import com.epam.array.exceptions.CustomException;
 
 import java.util.List;
 

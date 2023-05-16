@@ -1,4 +1,4 @@
-package com.epam.task.array.exceptions;
+package com.epam.array.exceptions;
 
 public class CustomException extends Exception {
     public CustomException() {

@@ -1,9 +1,9 @@
-package com.epam.task.array.customreader.impl;
+package com.epam.array.customreader.impl;
 
-import com.epam.task.array.customreader.CustomArrayReader;
-import com.epam.task.array.exceptions.CustomException;
-import com.epam.task.array.validator.CustomValidator;
-import com.epam.task.array.validator.impl.CustomValidatorImpl;
+import com.epam.array.customreader.CustomArrayReader;
+import com.epam.array.exceptions.CustomException;
+import com.epam.array.validator.CustomValidator;
+import com.epam.array.validator.impl.CustomValidatorImpl;
 
 import java.io.IOException;
 import java.nio.file.Files;

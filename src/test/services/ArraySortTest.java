@@ -1,7 +1,7 @@
 package test.services;
 
-import com.epam.task.array.entity.CustomArray;
-import com.epam.task.array.services.ArraySort;
+import com.epam.array.entity.CustomArray;
+import com.epam.array.services.ArraySort;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

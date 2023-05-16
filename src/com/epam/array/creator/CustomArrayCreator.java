@@ -1,7 +1,7 @@
-package com.epam.task.array.creator;
+package com.epam.array.creator;
 
-import com.epam.task.array.entity.CustomArray;
-import com.epam.task.array.exceptions.CustomException;
+import com.epam.array.exceptions.CustomException;
+import com.epam.array.entity.CustomArray;
 
 import java.util.ArrayList;
 import java.util.List;
