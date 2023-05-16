@@ -1,4 +1,4 @@
-package com.epam.task.array.tests;
+package test.services;
 
 import com.epam.task.array.services.ArrayCalculation;
 import com.epam.task.array.entity.CustomArray;
