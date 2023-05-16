@@ -4,7 +4,7 @@ import com.epam.task.array.entity.CustomArray;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class ArraySort implements ArraySortServiceInterface {
+public class ArraySort implements ArraySortService {
     private static final Logger LOGGER = LogManager.getLogger(ArraySort.class);
 
     public void bubbleSort(CustomArray customArray) {
