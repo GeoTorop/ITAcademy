@@ -1,9 +1,9 @@
-package com.epam.array.customreader;
+package com.epam.array.reader;
 
 import com.epam.array.exception.CustomException;
 
 import java.util.List;
 
-public interface CustomArrayReader {
+public interface ArrayReader {
     List<int[]> readCustomArray(String filename) throws CustomException;
 }

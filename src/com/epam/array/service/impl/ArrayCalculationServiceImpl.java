@@ -1,8 +1,8 @@
-package com.epam.array.services.impl;
+package com.epam.array.service.impl;
 
-import com.epam.array.services.ArrayCalculation;
+import com.epam.array.service.ArrayCalculation;
 import com.epam.array.entity.CustomArray;
-import com.epam.array.services.ArrayCalculationService;
+import com.epam.array.service.ArrayCalculationService;
 
 public class ArrayCalculationServiceImpl implements ArrayCalculationService {
     private final ArrayCalculation arrayCalculation;

@@ -1,6 +1,6 @@
 package test.services;
 
-import com.epam.array.services.ArrayCalculation;
+import com.epam.array.service.ArrayCalculation;
 import com.epam.array.entity.CustomArray;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

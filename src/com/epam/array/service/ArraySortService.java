@@ -1,4 +1,4 @@
-package com.epam.array.services;
+package com.epam.array.service;
 
 import com.epam.array.entity.CustomArray;
 

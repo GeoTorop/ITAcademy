@@ -1,7 +1,7 @@
-package com.epam.array.services.impl;
+package com.epam.array.service.impl;
 
-import com.epam.array.services.ArraySort;
-import com.epam.array.services.ArraySortService;
+import com.epam.array.service.ArraySort;
+import com.epam.array.service.ArraySortService;
 import com.epam.array.entity.CustomArray;
 
 

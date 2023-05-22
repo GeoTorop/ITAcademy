@@ -6,8 +6,11 @@ import com.epam.array.entity.CustomArray;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomArrayCreator {
+public class ArrayCreator {
     public static CustomArray createCustomArray(int[] array) throws CustomException {
+        if (array == null) {
+            throw new CustomException("Cannot create CustomArray: Array is null!");
+        }
         CustomArray customArray = new CustomArray(array);
         return customArray;
     }
@@ -19,7 +22,7 @@ public class CustomArrayCreator {
                 CustomArray customArray = new CustomArray(array);
                 customArrays.add(customArray);
             } else {
-                throw new CustomException("Array is null!");
+                throw new CustomException("Cannot create CustomArray: Array is null!");
             }
 
         }
