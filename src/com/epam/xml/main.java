@@ -1,4 +1,4 @@
-package com.epam.tasks;
+package com.epam.xml;
 
 public class main {
 
