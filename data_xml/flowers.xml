@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flowers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flowers.xsd">
+    <Plant id="p1">
+        <Name>Rose</Name>
+        <Soil>Loamy</Soil>
+        <Origin>Europe</Origin>
+        <VisualParameters>
+            <StemColor>Red</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Medium</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>20</Temperature>
+            <Lighting>true</Lighting>
+            <Watering>750</Watering>
+        </GrowingTips>
+        <Multiplying>Cuttings</Multiplying>
+        <DateOfAdmission>2023-05-09</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p2">
+        <Name>Tulip</Name>
+        <Soil>Sandy</Soil>
+        <Origin>Asia</Origin>
+        <VisualParameters>
+            <StemColor>Yellow</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Small</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>15</Temperature>
+            <Lighting>false</Lighting>
+            <Watering>350</Watering>
+        </GrowingTips>
+        <Multiplying>Bulbs</Multiplying>
+        <DateOfAdmission>2023-05-08</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p3">
+        <Name>Sunflower</Name>
+        <Soil>Ground</Soil>
+        <Origin>America</Origin>
+        <VisualParameters>
+            <StemColor>Green</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Large</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>20</Temperature>
+            <Lighting>true</Lighting>
+            <Watering>750</Watering>
+        </GrowingTips>
+        <Multiplying>Seeds</Multiplying>
+        <DateOfAdmission>2023-05-08</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p4">
+        <Name>Lavender</Name>
+        <Soil>Ground</Soil>
+        <Origin>Middle East</Origin>
+        <VisualParameters>
+            <StemColor>Purple</StemColor>
+            <LeafColor>Gray</LeafColor>
+            <Size>Small</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>20</Temperature>
+            <Lighting>true</Lighting>
+            <Watering>350</Watering>
+        </GrowingTips>
+        <Multiplying>Cuttings</Multiplying>
+        <DateOfAdmission>2023-05-08</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p5">
+        <Name>Cactus</Name>
+        <Soil>Sandy</Soil>
+        <Origin>America</Origin>
+        <VisualParameters>
+            <StemColor>Green</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Medium</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>25</Temperature>
+            <Lighting>true</Lighting>
+            <Watering>35</Watering>
+        </GrowingTips>
+        <Multiplying>Cuttings</Multiplying>
+        <DateOfAdmission>2023-05-07</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p6">
+        <Name>Daisy</Name>
+        <Soil>Ground</Soil>
+        <Origin>Europe</Origin>
+        <VisualParameters>
+            <StemColor>Green</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Small</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>20</Temperature>
+            <Lighting>true</Lighting>
+            <Watering>35</Watering>
+        </GrowingTips>
+        <Multiplying>Seeds</Multiplying>
+        <DateOfAdmission>2023-05-07</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p7">
+        <Name>Orchid</Name>
+        <Soil>Ground</Soil>
+        <Origin>Asia</Origin>
+        <VisualParameters>
+            <StemColor>Pink</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Medium</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>25</Temperature>
+            <Lighting>false</Lighting>
+            <Watering>9</Watering>
+        </GrowingTips>
+        <Multiplying>Cuttings</Multiplying>
+        <DateOfAdmission>2023-05-06</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p8">
+        <Name>Fern</Name>
+        <Soil>Ground</Soil>
+        <Origin>Oceania</Origin>
+        <VisualParameters>
+            <StemColor>Green</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Large</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>25</Temperature>
+            <Lighting>false</Lighting>
+            <Watering>350</Watering>
+        </GrowingTips>
+        <Multiplying>Spores</Multiplying>
+        <DateOfAdmission>2023-05-06</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p9">
+        <Name>Daffodil</Name>
+        <Soil>Ground</Soil>
+        <Origin>Europe</Origin>
+        <VisualParameters>
+            <StemColor>Green</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Small</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>20</Temperature>
+            <Lighting>true</Lighting>
+            <Watering>35</Watering>
+        </GrowingTips>
+        <Multiplying>Bulbs</Multiplying>
+        <DateOfAdmission>2023-05-07</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p10">
+        <Name>Peony</Name>
+        <Soil>Ground</Soil>
+        <Origin>Asia</Origin>
+        <VisualParameters>
+            <StemColor>Red</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Medium</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>25</Temperature>
+            <Lighting>true</Lighting>
+            <Watering>200</Watering>
+        </GrowingTips>
+        <Multiplying>Cuttings</Multiplying>
+        <DateOfAdmission>2023-05-06</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p11">
+        <Name>Palm</Name>
+        <Soil>Ground</Soil>
+        <Origin>Africa</Origin>
+        <VisualParameters>
+            <StemColor>Brown</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Large</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>30</Temperature>
+            <Lighting>true</Lighting>
+            <Watering>1200</Watering>
+        </GrowingTips>
+        <Multiplying>Seeds</Multiplying>
+        <DateOfAdmission>2023-05-05</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p12">
+        <Name>Ficus</Name>
+        <Soil>Loamy</Soil>
+        <Origin>Asia</Origin>
+        <VisualParameters>
+            <StemColor>Green</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Large</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>20</Temperature>
+            <Lighting>false</Lighting>
+            <Watering>350</Watering>
+        </GrowingTips>
+        <Multiplying>Cuttings</Multiplying>
+        <DateOfAdmission>2023-05-05</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p13">
+        <Name>Begonia</Name>
+        <Soil>Sandy</Soil>
+        <Origin>America</Origin>
+        <VisualParameters>
+            <StemColor>Pink</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Medium</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>25</Temperature>
+            <Lighting>true</Lighting>
+            <Watering>250</Watering>
+        </GrowingTips>
+        <Multiplying>Cuttings</Multiplying>
+        <DateOfAdmission>2023-05-04</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p14">
+        <Name>Succulent</Name>
+        <Soil>Sandy</Soil>
+        <Origin>America</Origin>
+        <VisualParameters>
+            <StemColor>Green</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Small</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>30</Temperature>
+            <Lighting>true</Lighting>
+            <Watering>70</Watering>
+        </GrowingTips>
+        <Multiplying>Cuttings</Multiplying>
+        <DateOfAdmission>2023-05-01</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p15">
+        <Name>Spider plant</Name>
+        <Soil>Loamy</Soil>
+        <Origin>Africa</Origin>
+        <VisualParameters>
+            <StemColor>Green</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Medium</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>20</Temperature>
+            <Lighting>true</Lighting>
+            <Watering>60</Watering>
+        </GrowingTips>
+        <Multiplying>Cuttings</Multiplying>
+        <DateOfAdmission>2023-05-03</DateOfAdmission>
+    </Plant>
+
+    <Plant id="p16">
+        <Name>Poinsettia</Name>
+        <Soil>Ground</Soil>
+        <Origin>America</Origin>
+        <VisualParameters>
+            <StemColor>Red</StemColor>
+            <LeafColor>Green</LeafColor>
+            <Size>Medium</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>25</Temperature>
+            <Lighting>false</Lighting>
+            <Watering>50</Watering>
+        </GrowingTips>
+        <Multiplying>Cuttings</Multiplying>
+        <DateOfAdmission>2023-05-02</DateOfAdmission>
+    </Plant>
+</Flowers>
