@@ -1,6 +1,7 @@
 package com.epam.xml.validator;
 
-import com.epam.xml.handler.FlowerErrorHandler;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -10,23 +11,30 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class FlowerValidator {
-    public static void main(String[] args) {
-        String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
-        String fileName = "data_xml/xml/flowers.xml";
-        String schemaName = "data_xml/xml/flowers.xsd";
-        SchemaFactory factory = SchemaFactory.newInstance(language);
-        File schemaLocation = new File(schemaName);
+    static Logger logger = LogManager.getLogger();
+
+    String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
+    String fileName = "data_xml/flowers.xml";
+    String schemaName = "data_xml/flowers.xsd";
+    SchemaFactory factory = SchemaFactory.newInstance(language);
+    File schemaLocation = new File(schemaName);
+
+    public void validate() {
         try {
             Schema schema = factory.newSchema(schemaLocation);
             Validator validator = schema.newValidator();
             Source source = new StreamSource(fileName);
             validator.setErrorHandler(new FlowerErrorHandler());
             validator.validate(source);
-        } catch (SAXException | IOException e) {
-            System.err.println(fileName + " is not correct or valid");
+        } catch (FileNotFoundException e){
+            logger.error("File is not found!");
+        }
+        catch (SAXException | IOException e) {
+            logger.error(fileName + " is not correct or valid!");
         }
     }
 }

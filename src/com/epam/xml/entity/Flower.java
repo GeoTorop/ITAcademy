@@ -1,17 +1,22 @@
 package com.epam.xml.entity;
 
-import java.util.StringJoiner;
+import java.util.Date;
 
 public class Flower {
     private String id;
     private String name;
     private String soil;
     private String origin;
-    private String visualParameters;
-    private String growingTips;
+    private VisualParameters visualParameters;
+    private GrowingTips growingTips;
     private String multiplying;
+    private Date dateOfAdmission;
 
-    public Flower(String id, String name, String soil, String origin, String visualParameters, String growingTips, String multiplying) {
+    public Flower() {
+    }
+
+    public Flower(String id, String name, String soil, String origin, VisualParameters visualParameters,
+                  GrowingTips growingTips, String multiplying, Date dateOfAdmission) {
         this.id = id;
         this.name = name;
         this.soil = soil;
@@ -19,6 +24,7 @@ public class Flower {
         this.visualParameters = visualParameters;
         this.growingTips = growingTips;
         this.multiplying = multiplying;
+        this.dateOfAdmission = dateOfAdmission;
     }
 
     public String getId() {
@@ -53,19 +59,19 @@ public class Flower {
         this.origin = origin;
     }
 
-    public String getVisualParameters() {
+    public VisualParameters getVisualParameters() {
         return visualParameters;
     }
 
-    public void setVisualParameters(String visualParameters) {
+    public void setVisualParameters(VisualParameters visualParameters) {
         this.visualParameters = visualParameters;
     }
 
-    public String getGrowingTips() {
+    public GrowingTips getGrowingTips() {
         return growingTips;
     }
 
-    public void setGrowingTips(String growingTips) {
+    public void setGrowingTips(GrowingTips growingTips) {
         this.growingTips = growingTips;
     }
 
@@ -77,16 +83,26 @@ public class Flower {
         this.multiplying = multiplying;
     }
 
+    public Date getDateOfAdmission() {
+        return dateOfAdmission;
+    }
+
+    public void setDateOfAdmission(Date dateOfAdmission) {
+        this.dateOfAdmission = dateOfAdmission;
+    }
+
     @Override
     public String toString() {
-        return new StringJoiner(", ", Flower.class.getSimpleName() + "[", "]")
-                .add("Id: '" + id + "'")
-                .add("Name: '" + name + "'")
-                .add("Soil: '" + soil + "'")
-                .add("Origin: '" + origin + "'")
-                .add("Visual Parameters: '" + visualParameters + "'")
-                .add("Growing Tips: '" + growingTips + "'")
-                .add("Multiplying: '" + multiplying + "'")
-                .toString();
+        final StringBuilder sb = new StringBuilder("Flower{");
+        sb.append("id='").append(id).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", soil='").append(soil).append('\'');
+        sb.append(", origin='").append(origin).append('\'');
+        sb.append(", visualParameters=").append(visualParameters);
+        sb.append(", growingTips=").append(growingTips);
+        sb.append(", multiplying='").append(multiplying).append('\'');
+        sb.append(", dateOfAdmission=").append(dateOfAdmission);
+        sb.append('}');
+        return sb.toString();
     }
 }
