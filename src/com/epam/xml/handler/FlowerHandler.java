@@ -47,6 +47,7 @@ public class FlowerHandler extends DefaultHandler {
         String data = new String(ch, start, length).strip();
         if (currentXmlTag != null) {
             switch (currentXmlTag) {
+                case ID -> current.setId(data);
                 case NAME -> current.setName(data);
                 case SOIL -> current.setSoil(data);
                 case ORIGIN -> current.setOrigin(data);
