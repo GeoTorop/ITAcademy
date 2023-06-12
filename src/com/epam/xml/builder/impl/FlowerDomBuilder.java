@@ -28,7 +28,7 @@ public class FlowerDomBuilder implements FlowersBuilder {
         try {
             docBuilder = factory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
-            logger.warn(e);
+            logger.error(e);
         }
     }
 
@@ -48,7 +48,7 @@ public class FlowerDomBuilder implements FlowersBuilder {
                 flowers.add(flower);
             }
         } catch (IOException | SAXException e) {
-            logger.warn(e);
+            logger.error(e);
         }
     }
 
