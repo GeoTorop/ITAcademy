@@ -10,11 +10,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class FlowerHandler extends DefaultHandler {
+    private static final String ELEMENT_FLOWER = "flower";
     private Set<Flower> flowers;
     private Flower current;
     private FlowerXmlTag currentXmlTag;
     private EnumSet<FlowerXmlTag> withText;
-    private static final String ELEMENT_FLOWER = "flower";
 
     public FlowerHandler() {
         flowers = new HashSet<>();
